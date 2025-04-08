@@ -19,7 +19,7 @@ export async function generateStaticParams() {
       allCharacters.push(
         ...data.results.map((char: any) => ({
           id: char.id,
-          image: char.image,
+          image: char.image.split('?')[0],
         }))
       );
 
