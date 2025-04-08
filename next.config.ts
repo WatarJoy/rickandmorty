@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: '/rick_and_morty',
+  basePath: '/rickandmorty',
   images: {
     domains: ["rickandmortyapi.com"],
   },
