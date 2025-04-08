@@ -79,12 +79,14 @@ export default function CharacterDetails() {
     );
   }
 
+  const cleanImageUrl = character.image.split("?")[0];
+
   return (
     <div className="flex flex-col gap-12 px-6">
       <div className="flex flex-col lg:flex-row bg-blue-500 p-6 rounded-lg text-white gap-8">
         <Image
           className="rounded-lg"
-          src={character.image}
+          src={cleanImageUrl}
           alt={`${character.name}`}
           width={300}
           height={300}
